@@ -1,0 +1,21 @@
+class Kata {
+  
+  public static String getMiddle(String word) {
+    //Code goes here!
+    int lengde;
+    int pos2;
+    int pos1;
+    int pos;
+    lengde = word.length();
+    if ( lengde % 2 == 0){
+      pos2 =lengde/2;
+      pos1 = pos2-1;
+      return Character.toString(word.charAt(pos1)) + Character.toString(word.charAt(pos2));
+    }
+    
+    else{
+    pos = lengde/2;
+    return Character.toString(word.charAt(pos));
+    }
+  }
+}
