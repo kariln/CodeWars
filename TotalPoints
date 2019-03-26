@@ -1,0 +1,33 @@
+public class TotalPoints {
+
+    
+    public static int points(String[] games) {
+      //implement me
+      int pointsX = 0;
+      int pointsY = 0;
+      int X;
+      int Y;
+
+      
+      for (String game:games){
+        X = Character.getNumericValue(game.charAt(0));
+        
+        Y = Character.getNumericValue(game.charAt(2));
+        
+        if (X > Y){
+          pointsX += 3;
+        }
+        
+        else if (X < Y){
+          pointsY += 3;
+        }
+        
+        else{
+          pointsX += 1;
+          pointsY += 1;
+        }
+    }
+    
+    return pointsX;
+    }
+}
